@@ -1,0 +1,95 @@
+.home_header {
+    height: 7vh;
+    width: 100vw;
+    background-color: #f0fafa;
+
+    display: flex;
+    
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    /* width: 100%; */
+
+    z-index: 2000; /* Bring it to the top */
+    /* responsive: true; */
+}
+
+.brand-image {
+    width: auto;
+    height: 4vh;
+    max-height: 4vh;
+}
+
+.title-large {
+    display: inline-block;
+}
+
+.title-small {
+    display: none;
+}
+
+/* If the browser window is 600px or smaller */
+/* @media only screen and (max-width: 600px) {
+    .home_header {
+        height: 7vh;
+  }
+} */
+
+/* If the browser window is 1920px or greater */
+@media only screen and (min-width: 1920px) {
+    .home_header {
+        height: 6vh;
+    }
+
+    .brand-image {
+        height: 3vh;
+    }
+}
+
+/* If the browser window is 1440px or smaller */
+@media only screen and (max-width: 1440px) {
+    .brand-image {
+        height: 3vh;
+    }
+}
+
+/* If the browser window is 768px or smaller */
+@media only screen and (max-width: 768px) {
+    .brand-image {
+        height: 3vh;
+    }
+
+}
+
+/* If the browser window is 600px or smaller */
+/* @media only screen and (max-width: 600px) {
+    .home_header {
+        display: none;
+    }
+    
+    .brand-image {
+        height: 2vh;
+    }
+
+    .title-large {
+        display: none;
+    }
+
+    .title-small {
+        display: inline-block;
+    }
+
+} */
+
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/* .home_title {
+    font-size: calc(0.75em + 1vmin);
+    font-size: clamp( 15rem, 80vw, 80vh)  Here 80vw is the preferred font-size. 15 rem is the minimum font size. 80vh is the max font size.
+    font-weight: 'bold';
+    color: #574d59;
+} */

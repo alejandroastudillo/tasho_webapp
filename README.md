@@ -12,3 +12,12 @@ Web application for facilitating end-users in programming, visualizing, simulati
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=a5YffMyu70g" target="_blank">
  <img src="http://img.youtube.com/vi/a5YffMyu70g/hqdefault.jpg" alt="Watch the video" width="448" height="301" border="10" />
 </a>
+
+## Run with Docker
+
+Coming soon
+
+## Run the GUI in development mode
+
+Go to the `front-end` directory and check the [README](front-end/README.md) file
+

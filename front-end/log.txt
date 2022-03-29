@@ -1,0 +1,40 @@
+npm WARN rm not removing /home/alejandro/phd_software/Code/Git_repos/FM_symposium/rockit/front-end/node_modules/.bin/jest as it wasn't installed by /home/alejandro/phd_software/Code/Git_repos/FM_symposium/rockit/front-end/node_modules/jest
+npm WARN rm not removing /home/alejandro/phd_software/Code/Git_repos/FM_symposium/rockit/front-end/node_modules/.bin/rimraf as it wasn't installed by /home/alejandro/phd_software/Code/Git_repos/FM_symposium/rockit/front-end/node_modules/rimraf
+npm WARN rm not removing /home/alejandro/phd_software/Code/Git_repos/FM_symposium/rockit/front-end/node_modules/.bin/semver as it wasn't installed by /home/alejandro/phd_software/Code/Git_repos/FM_symposium/rockit/front-end/node_modules/semver
+npm WARN rm not removing /home/alejandro/phd_software/Code/Git_repos/FM_symposium/rockit/front-end/node_modules/.bin/json5 as it wasn't installed by /home/alejandro/phd_software/Code/Git_repos/FM_symposium/rockit/front-end/node_modules/json5
+
+> core-js@2.6.11 postinstall /home/alejandro/phd_software/Code/Git_repos/FM_symposium/rockit/front-end/node_modules/babel-runtime/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@3.6.5 postinstall /home/alejandro/phd_software/Code/Git_repos/FM_symposium/rockit/front-end/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.6.5 postinstall /home/alejandro/phd_software/Code/Git_repos/FM_symposium/rockit/front-end/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/jest-haste-map/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 285 packages from 169 contributors, removed 250 packages, updated 1414 packages and audited 1703 packages in 25.507s
+
+89 packages are looking for funding
+  run `npm fund` for details
+
+found 1 high severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details

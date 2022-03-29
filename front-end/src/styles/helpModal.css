@@ -1,0 +1,9 @@
+.help-modal .modal-content{
+    border-radius: 15px;
+ }
+
+.dark .modal-content{
+    background-color: #181b20;
+    background: #181c20;
+    color: #f4fffe;
+ }

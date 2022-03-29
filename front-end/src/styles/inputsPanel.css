@@ -1,0 +1,129 @@
+
+/* ----------------- Panel ------------------ */
+
+.panel {
+    position: relative;
+    background: #181c20;
+    padding-top: 30px;
+    z-index: 1000;
+    /* width: 400px; */
+    width: 25vw;
+
+    overflow-y: hidden;
+}
+
+.panel:hover {
+    /* overflow-y: scroll; */
+    overflow-y: overlay;
+}
+
+/* ------------------------------------------ */
+
+
+/* --------- Hide native scroll bar --------- */
+/* *{
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+} */
+/* ------------------------------------------ */
+
+
+/* ---------------- Scroll bar -------------- */
+
+/* html {
+    scrollbar-face-color: #646464;
+    scrollbar-base-color: #646464;
+    scrollbar-3dlight-color: #646464;
+    scrollbar-highlight-color: #646464;
+    scrollbar-track-color: #000;
+    scrollbar-arrow-color: #000;
+    scrollbar-shadow-color: #646464;
+    scrollbar-dark-shadow-color: #646464;
+  } */
+
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: rgba(0, 0, 0, 0.0); }
+::-webkit-scrollbar-track {  background-color: rgba(0, 0, 0, 0.0);}
+::-webkit-scrollbar-track-piece { background-color: rgba(0, 0, 0, 0.0);}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: rgba(0, 0, 0, 0.0);}
+::-webkit-resizer { background-color: #666;}
+
+/* ------------------------------------------ */
+
+
+/* ------------- Resize panel --------------- */
+
+.resize {
+    border: 1px solid black; 
+    overflow-x: auto;
+
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+    /* cursor: col-resize; */
+}
+.resize.horizontal {
+    resize: horizontal;
+    /* overflow-x: hidden; */
+}
+.resize.vertical {
+    resize: vertical;
+}
+.resize.both {
+    resize: both;
+}
+.wrap {
+    min-width: 25vw;
+    max-width: 50vw;
+}
+/* ------------------------------------------ */
+
+
+/* -------------- Responsiveness ------------ */
+/* If the browser window is 1920px or greater */
+@media only screen and (min-width: 1920px) {
+    .panel {
+        width: 18vw;
+    }
+    .wrap {
+        min-width: 18vw;
+    }
+}
+
+/* ------------------------------------------ */
+
+/* ------------ Panel (not used) ------------ */
+.resizer {
+    width: 1px;
+    position: relative;
+    cursor: col-resize;
+    background: transparent;
+    flex-shrink: 0;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */ 
+    
+  }
+  .resizer:hover{
+      background: #e4e4e4;
+  }
+  
+  .resizer::after,
+  .resizer::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    right: 0;
+    display: inline-block;
+    height: 20px;
+    margin: 0;
+  }
+  .resizer::before {
+    left: 0;
+  }
+
+/* ------------------------------------------ */

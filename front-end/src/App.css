@@ -1,0 +1,192 @@
+.App {
+    text-align: center;
+  }
+  
+  .home_header {
+    /* height: 6vh; */
+    background-color: #1d8db0;
+  }
+    
+  .home_container_night {
+    background: #121212;
+    padding: 2vh 1vw 2vh 1vw;
+    height: 94vh;
+  }
+  
+  /* ############# GUI control column ############# */
+  .demo-sliders {
+    width: 80%;
+  }
+  
+  [class="custom-control-input"]:checked
+    ~ [class="custom-control-label"]::before {
+    background-color: #1d8db0;
+    border-color: #999999;
+  }
+  
+  .form-control-range::-webkit-slider-thumb {
+    background: gray;
+    background-color: #ff0000;
+    color: #00ff00;
+  }
+  
+  /* Renders incorrectly (no groove visible)
+    .form-control-range::-moz-range-thumb {
+      background: gray;
+      background-color: #ff0000;
+    }*/
+  
+  .form-control-range::-ms-thumb {
+    background: gray;
+    background-color: #ff0000;
+  }
+  
+  /* ############# Code container column ############# */
+  .code_container {
+    height: 81vh;
+    position: relative;
+  }
+  
+  .code-highlighter {
+    /* overflow-y: "scroll"; */
+    /* overflow-x: "scroll"; */
+    /* vertical-align: top; */
+    height: 80vh;
+    /* margin-top: -10vh; */
+    position: relative;
+  }
+  
+  code span::selection {
+    background-color: "#fdfd96";
+  }
+  
+  .plot_chart {
+    height: 31.45%;
+  }
+  
+  .code-enable-switch {
+    position: absolute;
+    width: 15%;
+    margin-left: 80%;
+    margin-top: 0.5%;
+    align-content: right;
+  }
+  
+  .nightmode-button {
+    position: absolute;
+    z-index: 1000;
+    /* width: 99%;
+      height: 8%; */
+    /* margin-left: 83%;
+    margin-top: -84vh; */
+    right: 5px;
+    top: 5px;
+  }
+  
+  /* ############# Stage container column ############# */
+  .stageContainer {
+    position: relative;
+    width: 100%;
+    height: 81vh;
+    vertical-align: top;
+  }
+  
+  .stage_canvas {
+    width: auto;
+    height: auto;
+  }
+  
+  .indicators-box {
+    position: absolute;
+    z-index: 1000;
+    width: 99%;
+    height: 8%;
+    margin-left: 0.3em;
+    margin-top: 0.3em;
+  }
+  
+  .dot-indicator {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+  
+  .traffic-light {
+    align-items: center;
+  }
+  
+  /* ############# General styles ############# */
+  
+  .column-title {
+    height: 6.5vh;
+    text-align: center;
+  }
+  
+  h1 {
+    user-select: none;
+  }
+  
+  h2 {
+    user-select: none;
+  }
+  
+  .btn-circle {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+  }
+  
+  .btn-circle i {
+    position: relative;
+    top: 0px;
+  }
+  
+  .btn-circle-sm {
+    width: 35px;
+    height: 35px;
+    line-height: 10px;
+    top: -4px;
+  
+    font-size: 1.2rem;
+  }
+  
+  .btn-circle-md {
+    width: 45px;
+    height: 45px;
+    line-height: 10px;
+    top: -4px;
+  
+    font-size: 1.2rem;
+  }
+  
+  .btn-circle-lg {
+    width: 55px;
+    height: 55px;
+    line-height: 10px;
+    top: -4px;
+  
+    font-size: 1.2rem;
+  }
+  
+  .btn-circle-xl {
+    width: 80px;
+    height: 80px;
+    line-height: 10px;
+    /* top: -4px; */
+  
+    font-size: 2rem;
+  }
+  
+  .noselect {
+    user-select: none; 
+  }
+  
+  .scrollable {
+    overflow-y: "scroll";
+    overflow-x: "scroll";
+  }
+  
+  

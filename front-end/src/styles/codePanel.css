@@ -1,0 +1,62 @@
+/* ---------------- Code panel -------------- */
+
+.code_container {
+    position: relative;
+    z-index: 1000;
+    margin-left: auto;
+    margin-top: calc(7vh + 10px);
+    margin-right: 10px;
+
+    width: 25vw;
+    /* height: 70vh; */
+}
+
+.code_card {
+    border-radius: 15px;
+}
+
+.code_card.dark {
+    background-color: #181b20;
+}
+
+.code_card_title {
+    user-select: none;
+}
+
+.code_card_title.dark {
+    color: #f4fffe;
+}
+
+/* ------------------------------------------ */
+
+/* -------------- Responsiveness ------------ */
+
+/* If the browser window is 1920px or greater */
+@media only screen and (min-width: 1920px) {
+    .code_container {
+        width: 25vw;
+        margin-top: calc(6vh + 10px);
+    }
+}
+
+/* If the browser window is 1440px or smaller */
+@media only screen and (max-width: 1440px) {
+    .code_container {
+        width: 35vw;
+    }
+}
+
+/* If the browser window is 1024px or smaller */
+@media only screen and (max-width: 1024px) {
+    .code_container {
+        width: 50vw;
+    }
+}
+
+/* If the browser window is 768px or smaller */
+@media only screen and (max-width: 768px) {
+    .code_container {
+        width: 50vw;
+    }
+}
+

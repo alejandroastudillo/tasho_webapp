@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/konva@7.1.3/konva.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Rockit demo</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      var width = window.innerWidth;
+      var height = window.innerHeight;
+
+      var stage = new Konva.Stage({
+        container: 'container',
+        width: width,
+        height: height,
+      });
+
+      var layer = new Konva.Layer();
+
+      var pointA = new Konva.Circle({
+        x: 500,
+        y: 500,
+        offset: [50, 25],
+        radius: 20,
+
+        fill: '#00D2FF',
+        stroke: 'black',
+        strokeWidth: 4,
+        draggable: true,
+      });
+
+      var pointB = new Konva.Circle({
+        x: 200,
+        y: 300,
+        offset: [50, 25],
+        radius: 20,
+
+        fill: '#FF0000',
+        stroke: 'black',
+        strokeWidth: 4,
+        draggable: true,
+      });
+      var line = new Konva.Line({
+        points: [5, 70, 140, 23, 250, 60, 300, 20],
+        stroke: 'gray',
+        strokeWidth: 15,
+        lineCap: 'round',
+        lineJoin: 'round',
+        draggable: false,
+        listening: false,
+      });
+
+      async function set_point(label, args) {
+        const result = await $.ajax({
+          url: '/set_point',
+          type: 'POST',
+          data: JSON.stringify({ label: label, coords: args}),
+          contentType: "application/json"
+        });
+
+      }
+
+
+      pointA.on('dragmove', function () {
+        set_point('A', [pointA.absolutePosition().x, pointA.absolutePosition().y]);
+      });
+
+      pointB.on('dragmove', function () {
+        set_point('B', [pointB.absolutePosition().x, pointB.absolutePosition().y]);
+      });
+
+      layer.add(pointA);
+      layer.add(pointB);
+      layer.add(line);
+
+      // add the layer to the stage
+      stage.add(layer);
+
+      function get_ocp_result() {
+        const result = $.ajax({
+          url: '/get_ocp_result',
+          type: 'GET',
+          success: function(result) {
+            line.points(result.xy);
+            layer.draw();
+            window.setTimeout(get_ocp_result,10);
+          }
+        });
+      }
+
+      get_ocp_result();
+
+    </script>
+  </body>
+</html>

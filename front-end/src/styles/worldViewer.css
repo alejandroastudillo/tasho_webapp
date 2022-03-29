@@ -1,0 +1,29 @@
+/* */
+.viewer-theme {
+    /* width: 50vw; */
+    /* height: 50vh; */
+    /* background-color: #272727; */
+    /* height: 100%; */
+
+    /* background-color: #383848; */
+    /* position: relative; */
+    /* width: 100%; */
+
+    /* height: 81vh; */
+    
+    /* flex: 1;
+    display: flex;
+    outline: none;
+    background: #383848; */
+    background: #383848;
+    width: 100%;
+    /* height: 100vh; */
+    height: 93vh;
+}
+
+/* If the browser window is 1920px or greater */
+@media only screen and (min-width: 1920px) {
+    .viewer-theme {
+        height: 94vh;
+    }
+}
